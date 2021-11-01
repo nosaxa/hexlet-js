@@ -1,17 +1,10 @@
-import _ from "lodash";
-
-console.log("Hello Hexlet!");
-console.log(_.last(["one", "two"]));
+// import _ from "lodash";
 
 const subtr = (a, b) => {
   if (a > b) {
     return a - b;
-  } else {
-    return b - a;
   }
+  return b - a;
 };
 
-const first = subtr(12, 4);
-const second = subtr(2399, 5550);
-
-console.log(first, second);
+console.log(subtr(12440, 3339));
