@@ -1,11 +1,7 @@
-import capitalize from "../src/capitalize.js";
+import { strict as assert } from 'assert';
+import capitalize from '../src/capitalize.js';
 
-if (capitalize("hello") !== "Hello") {
-  throw new Error("Function works incorrectly!");
-}
+assert.equal(capitalize('hello'), 'Hello');
+assert.equal(capitalize(''), '');
 
-if (capitalize("") !== "") {
-  throw new Error("Function works incorrectly!");
-}
-
-console.log("All tests was passed ;)");
+console.log('All tests was passed 😎');
